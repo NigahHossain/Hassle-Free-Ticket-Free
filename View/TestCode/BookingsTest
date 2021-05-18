@@ -1,0 +1,18 @@
+</php
+class BookingsTest extends \Hassle-Free-Ticket-Free\Framework\TestCase
+{
+    protected $bookings;
+     public function testbooking_insert()
+     {
+         require bookings.php;
+         $book=new bookings;
+
+         $book->first_name="Nigah";
+         $book->surname="Hossain";
+
+         $this->assertEquals('Nigah Hossain',$book->booking_insert());
+
+     }
+
+     
+} 
